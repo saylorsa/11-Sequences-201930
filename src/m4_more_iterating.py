@@ -422,7 +422,7 @@ def count_items_bigger_than(numbers, threshold):
 def run_test_count_positive_sines():
     """ Tests the   count_positive_sines   function. """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement this TEST function.
+    # DONE: 6. Implement this TEST function.
     #   It TESTS the  count_positive_sines  function defined below.
     #   Include at least ** 1 ** ADDITIONAL test beyond what we supplied.
     #
@@ -518,6 +518,13 @@ def run_test_count_positive_sines():
     print('        actual:  ', actual)
 
     # TO DO 6 (continued):  Add your 1 ADDITIONAL test here:
+
+    # test 11
+    expected = 4
+    actual = count_positive_sines([2, 3, 5, 7, 11, 13, 17])
+    print()
+    print('Test 11 expected:', expected)
+    print('        actual:  ', actual)
 
 
 def count_positive_sines(numbers):
