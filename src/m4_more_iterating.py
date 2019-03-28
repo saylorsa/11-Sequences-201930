@@ -371,7 +371,7 @@ def run_test_count_items_bigger_than():
     actual = count_items_bigger_than(sequence, threshold)
     print()
     print('Test 10 expected:', expected)
-    print('       actual:  ', actual)
+    print('        actual:  ', actual)
 
 
 def count_items_bigger_than(numbers, threshold):
@@ -408,9 +408,15 @@ def count_items_bigger_than(numbers, threshold):
       :type threshold: float
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # -------------------------------------------------------------------------
+
+    count = 0
+    for k in range(len(numbers)):
+        if numbers[k] > threshold:
+            count = count + 1
+    return count
 
 
 def run_test_count_positive_sines():
