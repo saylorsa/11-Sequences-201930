@@ -673,7 +673,7 @@ def sum_first_n(numbers, n):
       :type n: int
     """
     # -------------------------------------------------------------------------
-    # TODO: 9. Implement and test this function.
+    # DONE: 9. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # RESTRICTION:
@@ -682,6 +682,12 @@ def sum_first_n(numbers, n):
     #      -- The TESTING code above does use   built_ins.sum
     #         as an ORACLE in TESTING this function, however.
     # -------------------------------------------------------------------------
+
+    total = 0
+
+    for k in range(n):
+        total = total + numbers[k]
+    return total
 
 
 # -----------------------------------------------------------------------------
