@@ -49,10 +49,10 @@ def main():
     #        RE-commenting out the previous test if you wish.
     # -------------------------------------------------------------------------
 
-    run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
-                                      sequence4)
-    # run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
-    #                                    sequence4)
+    # run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
+    #                                   sequence4)
+    run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
+                                        sequence4)
     # run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
     #                                     sequence4)
     # run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
@@ -393,9 +393,11 @@ def print_all_items_backwards(sequence):
        55
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    for k in range(len(sequence)-1, -1, -1):
+        print(sequence[k])
 
 
 ###############################################################################
