@@ -21,7 +21,7 @@ def main():
 def run_test_count_negatives():
     """ Tests the   count_negatives   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  count_negatives  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests beyond those we wrote.
     #
@@ -83,9 +83,22 @@ def run_test_count_negatives():
     print('       actual:  ', actual)
 
     # -------------------------------------------------------------------------
-    # TODO 2 (continued):  Add your 2 ADDITIONAL tests here:
+    # DONE 2 (continued):  Add your 2 ADDITIONAL tests here:
     # -------------------------------------------------------------------------
 
+    # Test 6:
+    expected = 14
+    actual = count_negatives([-500, -500, -500, -0.0000001, -1, -2, -3, -4, -5, -6, -7, -8, -9, -10])
+    print()
+    print('Test 6 expected:', expected)
+    print('       actual:  ', actual)
+
+    # Test 7:
+    expected = 0
+    actual = count_negatives((4, 81, 9))
+    print()
+    print('Test 7 expected:', expected)
+    print('       actual:  ', actual)
 
 def count_negatives(seq):
     """
